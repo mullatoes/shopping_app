@@ -1,16 +1,33 @@
 # shopping_app
 
-A new Flutter project.
+A simple Flutter shopping app with features to add items to a cart and persist the cart state using the `provider` package and `shared_preferences`.
+
+## Features
+
+- Browse a list of products.
+- Add products to the shopping cart.
+- View the cart, see the added items, and their quantities.
+- Persist the cart state across app sessions using `shared_preferences`.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter](https://flutter.dev/docs/get-started/install) must be installed on your development machine.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the repository:**
+   ```shell
+   git clone https://github.com/your-username/shopping-app.git
+
+cd shopping-app
+flutter pub get
+flutter run
+
+Usage
+Launch the app.
+Browse the list of products.
+Click the "Add to Cart" button to add a product to your cart.
+Click the floating action button with a shopping cart icon to view your cart.
+In the cart, you can see the items you've added and their quantities.

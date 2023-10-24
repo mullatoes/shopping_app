@@ -21,10 +21,15 @@ class _ShoppingPageState extends State<ShoppingPage> {
       ),
       body: ProductList(),
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.shopping_cart),
+        child: const Icon(
+          Icons.shopping_cart,
+        ),
         onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const CartScreen()));
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const CartScreen(),
+              ));
         },
       ),
     );

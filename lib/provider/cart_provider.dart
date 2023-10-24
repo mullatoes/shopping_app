@@ -11,6 +11,10 @@ class CartProvider extends ChangeNotifier {
 
   List<CartItem> get items => _items;
 
+  CartProvider() {
+    loadCartFromStorage();
+  }
+
   String _serializeCartData() {
     final cartList = _items.map((item) {
       return {
